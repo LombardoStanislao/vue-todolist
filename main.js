@@ -10,15 +10,28 @@ var app = new Vue({
 
   data: {
 
-      todo: ['Fare stretching', 'Finire il sito', 'Lavare la macchina',
+      todos: ['Fare stretching', 'Finire il sito', 'Lavare la macchina',
       'Compilare i documenti', 'Mandare la mail a Luca'],
-      
 
+      element: ''
 
   },
 
   methods: {
 
+      addActivity(newTodo) {
+
+        if (this.element != '') {
+
+          this.todos.push(newTodo)
+        }
+
+      },
+
+      remove(position) {
+
+        this.todos.splice(position, 1)
+      }
 
 
   }, // Fine methods

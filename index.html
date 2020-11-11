@@ -15,15 +15,19 @@
 
         <h1>To Do list</h1>
 
-        <input type="text" name="" value="" placeholder="Attività">
-        <button type="button" name="button">Inserisci attività</button>
+        <input v-on:keyup.enter="addActivity(element)" type="text" name="" v-model="element" value="" placeholder="Attività">
+
+        <button type="button" name="button" @click="addActivity(element)" >Inserisci attività</button>
 
 
         <ul>
-          <li v-for="activity in todo">
+
+          <li v-for="(activity, index) in todos" @click="remove(index)">
+
             {{activity}}
 
           </li>
+
         </ul>
       </div>
 
