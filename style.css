@@ -5,6 +5,26 @@
   font-family: sans-serif;
 }
 
+ul {
+  padding-top: 20px;
+}
+
+input {
+  margin: 20px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px;
+}
+
+h1 {
+  padding-bottom: 20px;
+}
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
 }

@@ -10,6 +10,9 @@ var app = new Vue({
 
   data: {
 
+      todo: ['Fare stretching', 'Finire il sito', 'Lavare la macchina',
+      'Compilare i documenti', 'Mandare la mail a Luca'],
+      
 
 
   },
